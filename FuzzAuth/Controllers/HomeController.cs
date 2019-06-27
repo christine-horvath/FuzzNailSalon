@@ -14,6 +14,11 @@ namespace FuzzAuth.Controllers
             return View();
         }
 
+        public ActionResult Schedule()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -28,5 +33,12 @@ namespace FuzzAuth.Controllers
 
             return View();
         }
+        [HttpGet]
+        public ActionResult SchedulePartial()
+        {
+
+            return PartialView("HomePartial");
+        }
+
     }
 }

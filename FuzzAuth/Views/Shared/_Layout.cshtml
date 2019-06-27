@@ -24,19 +24,21 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Services", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Meet the Team", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Meet the Techs", "About", "Home")</li>
+                    <li>@Html.ActionLink("Salon Info", "Schedule", "Home")</li>
+                    <li>@Html.ActionLink("Workshops & Events", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
+        <br/>
+        <br/>
         <footer>
-            <p>&copy; @DateTime.Now.Year</p>
         </footer>
     </div>
 

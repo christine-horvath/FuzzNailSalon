@@ -118,7 +118,7 @@ textarea {
   color: inherit;
 }
 button {
-  overflow: visible;
+  overflow: hidden;
 }
 button,
 select {
@@ -4332,7 +4332,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     color: #f48b41;
     font-family: 'Berlin Sans FB';
     font-size: large;
-    letter-spacing: 2px;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4962,25 +4961,26 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
+    background-image: url("/Content/Images/fuzznine.jpg");
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 30px;
     color: inherit;
-    font-family:'Harlow Solid';
+    font-family: 'Harlow Solid';
     background-size: cover;
     color: white;
-    background-image: url("https://previews.123rf.com/images/naypong/naypong1610/naypong161000145/63895513-colorful-sand-as-the-background-multi-colored-sand.jpg");
 }
 .jumbotron h1,
 .jumbotron .h1 {
+  margin-top: 300px;
   color: inherit;
 }
 .jumbotron p {
+  margin-top: 10px;
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
   font-family: 'Berlin Sans FB';
-  letter-spacing: 2px;
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;
@@ -5009,17 +5009,28 @@ a.badge:focus {
     font-size: 63px;
   }
 }
+
+.card-deck {
+    font-family: Verdana;
+    padding-left: 50px;
+}
+
+.btn-primary {
+    background-color: #f48b41 !important;
+    border-color: #f48b41 !important;
+}
+
 .thumbnail {
-  display: block;
-  padding: 4px;
-  margin-bottom: 20px;
-  line-height: 1.42857143;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  -webkit-transition: border .2s ease-in-out;
-       -o-transition: border .2s ease-in-out;
-          transition: border .2s ease-in-out;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
 }
 .thumbnail > img,
 .thumbnail a > img {
@@ -5163,8 +5174,6 @@ a.thumbnail.active {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-  -webkit-background-size: 40px 40px;
-          background-size: 40px 40px;
 }
 .progress.active .progress-bar,
 .progress-bar.active {
@@ -5950,12 +5959,25 @@ button.close {
   margin-top: -2px;
 }
 .modal-title {
+  color: black;
+  font-family: Verdana;
+  font-size: large;
   margin: 0;
   line-height: 1.42857143;
+  text-align: center;
+}
+.schedulemodalbutton {
+    background-color: #f48b41;
+    font-weight: 500;
+    color: black;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .modal-body {
-  position: relative;
-  padding: 15px;
+    position: relative;
+    padding: 15px;
+    color: #f48b41;
+    text-align: center;
 }
 .modal-footer {
   padding: 15px;

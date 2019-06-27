@@ -2,32 +2,73 @@
     ViewBag.Title = "Home Page";
 }
 <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron" style="height: 500px;">
         <h1>Revive Your Vibe</h1>
         @*<p class="lead">Revive Your Vibe</p>*@
         @*Create popup to link to here - display each tech w/ links to their booking tools*@
-        <p><a href="#" class="btn btn-warning btn-lg">Book Now! &raquo;</a></p>
+        <p>
+            <button class="schedulemodalbutton" data-toggle="modal" data-target="#scheduleModal">Book Now!</button>
+            <div class="modal" id="scheduleModal">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title"> Choose Your Tech </div>
+                            <button data-dismiss="modal" class="close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <a href="https://www.vagaro.com/pouncingpaws" target="_blank" class="button" style="font-family: Verdana">Pouncing Paws</a> <br/>
+                            <a href="https://www.schedulicity.com/scheduling/FEE8Y2" target="_blank" class="button" style="font-family: Verdana">Finger Dressing</a><br />
+                            <a href="https://www.schedulicity.com/scheduling/FEE8Y2" target="_blank" class="button" style="font-family: Verdana">Rainbow Realness</a><br />
+                            <a href="https://www.schedulicity.com/scheduling/FEE8Y2" target="_blank" class="button" style="font-family: Verdana">LAHOnails</a>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                (function () {
+                    $('.schedulemodalbutton').click(function () {
+                        $('#scheduleModal').modal('show');
+                    });
+                });
+            </script>
+            <!--<a href="#" class="btn btn-warning btn-lg">Book Now! &raquo;</a>-->
+        </p>
     </div>
 </div>
 
-<div class="row">
+<div class="card-deck">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <div class="card">
+            <img src="~/Content/Images/fuzzresize3.jpg" class="card-img-top" alt="Gallery wall">
+            <div class="card-body">
+                <h3 class="card-title">What The Fuzz?!</h3>
+                <p class="card-text">Fuzz is a nail salon and recharging sanctuary. Learn more about who we are and what we're about here!</p>
+                <a href="#" class="btn btn-primary">More!</a>
+            </div>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <div class="card">
+            <img src="~/Content/Images/db2.jpg" class="card-img-top" alt="Gallery wall">
+            <div class="card-body">
+                <h3 class="card-title">Who the Fuzz?!</h3>
+                <p class="card-text">Our techs are carefully selected to provide a curated experience for you. Find which tech fits your vibe!</p>
+                <a href="#" class="btn btn-primary">More!</a>
+            </div>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <div class="card">
+            <img src="~/Content/Images/fuzzresize5.jpg" class="card-img-top" alt="Gallery wall">
+            <div class="card-body">
+                <h3 class="card-title">Host or Attend an Event!</h3>
+                <p class="card-text">Come hang with some bodacious babes! Reserve our space for your next gathering or check out our events calendar.</p>
+                <a href="#" class="btn btn-primary">More!</a>
+            </div>
+        </div>
     </div>
 </div>
+
